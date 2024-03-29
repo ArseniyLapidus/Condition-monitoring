@@ -26,10 +26,10 @@ class User(models.Model):
     email = models.CharField(max_length = 256, blank=False)
 
 class Role(models.Model):
-    name = models.CharField(max_length = 16, blank=False)
+    role_name = models.CharField(max_length = 16, blank=False)
     
 class Test(models.Model):
-    name = models.CharField(max_length = 32, blank=False)
+    test_name = models.CharField(max_length = 32, blank=False)
     type = models.CharField(max_length = 16, blank=True)
     results = models.IntegerField(default=0)
 
