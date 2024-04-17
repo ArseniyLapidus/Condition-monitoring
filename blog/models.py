@@ -36,3 +36,4 @@ class Test(models.Model):
 class Results(models.Model):
     user = models.ForeignKey('User', on_delete=models.CASCADE)
     test = models.ForeignKey('Test', on_delete=models.CASCADE)
+    count = models.IntegerField(default=0)
